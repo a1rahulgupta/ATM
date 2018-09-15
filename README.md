@@ -1,4 +1,4 @@
-# MEAN Stack ATM App Web Application Developed By Rahul Gupta
+# MEAN Stack ATM Web Application Developed By Rahul Gupta
 
 ATM App Web Application V.1
 
