@@ -1,0 +1,48 @@
+<div class="col-lg-12"></div>
+<div class="col-lg-12 blockHeader">ATM App</div>
+
+
+<div class="col-lg-12">
+  <br>
+
+</div>
+
+
+<form [formGroup]="cardForm" (ngSubmit)="onFormSubmit(cardForm.value)">
+
+  <div class="inner cover">
+    <h2 style="text-align: center;"><strong>Please Enter Card Number and Pin Number</strong></h2>
+    <hr>
+<br>
+<br>
+
+
+    <div class="row">
+
+      <div class="col-lg-6">
+        <div>
+          <input id="url-field" type="text" formControlName="card_number" maxlength="16" class="form-control" placeholder="Your Card Number here">
+          <span class="input-group-btn">
+            <div class="row" style="height: 50px;
+            margin: 4%;">
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div>
+          <input id="url-field" type="text" formControlName="pin" maxlength="4" class="form-control" placeholder="Your Pin Number here">
+          <span class="input-group-btn">
+            <div class="row" style="height: 50px;
+            margin: 4%;">
+            </div>
+          </span>
+        </div>
+      </div>
+      <button type="submit" [disabled]="!cardForm.valid" class="btn btn-primary">Enter</button>
+
+      <br>
+    </div>
+  </div>
+
+</form>

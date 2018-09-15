@@ -1,0 +1,34 @@
+<div class="col-lg-12">
+  <div class="col-lg-12 blockHeader"> ATM App</div>
+
+
+  <div class="col-lg-12">
+    <br>
+
+  </div>
+  <h2 style="text-align: center;"><strong>Please enter amount</strong></h2>
+  <hr>
+<br>
+<br>
+ 
+  <div class="row">
+
+    <div class="col-lg-6">
+      <div>
+        <input id="url-field" type="text" [(ngModel)]="params.amount" maxlength="16" class="form-control" placeholder="Withdrwal Amount">
+        <span class="input-group-btn">
+          <div class="row" style="height: 20px;
+        margin: 4%;">
+          </div>
+        </span>
+      </div>
+      <button type="button" (click)="cashWithdrwal(params)" [disabled]="!params.amount" class="btn btn-primary">Done</button>
+    </div>
+  </div>
+
+
+
+
+  <br>
+  <br>
+</div>
